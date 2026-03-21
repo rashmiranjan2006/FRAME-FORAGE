@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <span className="font-display text-2xl font-bold">
-              FRAME FORAGE<span className="text-primary">.</span>
+              FRAME FORAZE<span className="text-primary">.</span>
             </span>
             <p className="text-muted-foreground text-sm mt-3 max-w-sm">
               Premium creative media agency transforming brands through cinematic storytelling and data-driven strategy.
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          © {new Date().getFullYear()} FRAME FORAGE. All rights reserved.
+          © {new Date().getFullYear()} FRAME FORAZE. All rights reserved.
         </div>
       </div>
     </footer>

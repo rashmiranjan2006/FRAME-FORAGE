@@ -28,12 +28,12 @@ const FounderSection = () => {
                 Where Technology Meets Creativity
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                "I started FRAME FORAGE with a simple belief: every brand has a story worth telling cinematically. 
+                "I started FRAME FORZE with a simple belief: every brand has a story worth telling cinematically. 
                 We combine cutting-edge technology with raw creative talent to build experiences that don't just look good — 
                 they convert. Our vision is to be the creative partner that modern businesses deserve."
               </p>
               <p className="font-display font-semibold">
-                — Founder, <span className="text-primary">FRAME FORAGE</span>
+                — Founder, <span className="text-primary">FRAME FORZE</span>
               </p>
             </div>
           </motion.div>

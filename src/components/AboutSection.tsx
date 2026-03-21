@@ -31,7 +31,7 @@ const AboutSection = () => {
               <span className="text-gradient">Creative Agency</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              FRAME FORAGE is where cinematic storytelling meets data-driven strategy.
+              FRAME FORZE is where cinematic storytelling meets data-driven strategy.
               We don't just create content — we engineer brand experiences that convert
               attention into revenue.
             </p>

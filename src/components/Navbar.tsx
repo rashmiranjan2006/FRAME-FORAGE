@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container-tight flex items-center justify-between h-20 px-4 md:px-8">
         <a href="#" className="font-display text-xl md:text-2xl font-bold tracking-tight">
-          FRAME FORAGE<span className="text-primary">.</span>
+          FRAME FORZE<span className="text-primary">.</span>
         </a>
 
         {/* Desktop */}
