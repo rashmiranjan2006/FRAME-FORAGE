@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 const stats = [
   { value: "200+", label: "Projects Completed" },
-  { value: "75+", label: "Brands Served" },
-  { value: "340%", label: "Avg. Engagement Growth" },
+  { value: "15+", label: "Brands Served" },
+  { value: "100%", label: "Avg. Engagement Growth" },
 ];
 
 const AboutSection = () => {
