@@ -44,7 +44,7 @@ const services = [
 const ServicesSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [activeModal, setActiveModal] = useState<number | null>(null);
+  const [activeModal, setActiveModal] = useState(null);
 
   return (
     <section id="services" className="section-padding bg-surface/50" ref={ref}>

@@ -10,14 +10,14 @@ const ContactSection = () => {
     name: "", business: "", email: "", phone: "", budget: "", description: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Placeholder for form submission
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }));
   };
 

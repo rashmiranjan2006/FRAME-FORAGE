@@ -29,7 +29,7 @@ const caseStudies = [
 const CaseStudiesSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [expanded, setExpanded] = useState<number | null>(null);
+  const [expanded, setExpanded] = useState(null);
 
   return (
     <section className="section-padding" ref={ref}>
