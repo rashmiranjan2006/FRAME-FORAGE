@@ -12,7 +12,16 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder for form submission
+    // Build message
+    const msg = `Name: ${form.name}\nBusiness: ${form.business}\nEmail: ${form.email}\nPhone: ${form.phone}\nBudget: ${form.budget}\nProject: ${form.description}`;
+    // WhatsApp
+    const waUrl = `https://wa.me/919348744776?text=${encodeURIComponent(msg)}`;
+    window.open(waUrl, "_blank");
+    // SMS fallback (for mobile devices)
+    setTimeout(() => {
+      const smsUrl = `sms:+919348744776?body=${encodeURIComponent(msg)}`;
+      window.open(smsUrl, "_blank");
+    }, 1000);
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -140,7 +149,7 @@ const ContactSection = () => {
               <h3 className="font-display font-semibold mb-2">Quick Connect</h3>
               <p className="text-muted-foreground text-sm mb-4">Prefer a direct conversation?</p>
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919348744776"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 bg-[hsl(142_70%_35%)] text-foreground rounded-xl text-sm font-semibold hover:bg-[hsl(142_70%_30%)] transition-colors w-full justify-center"
@@ -153,7 +162,7 @@ const ContactSection = () => {
             <div className="glass-card p-6">
               <h3 className="font-display font-semibold mb-2">Office</h3>
               <p className="text-muted-foreground text-sm">
-                Mumbai, Maharashtra
+                Berhampur, Odisha
                 <br />
                 India
               </p>

@@ -19,15 +19,15 @@ const AboutSection = () => {
           {/* Left */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            animate={inView ? { opacity: 1, x: 0 } : {}} 
             transition={{ duration: 0.8 }}
-          >
+          > 
             <span className="text-primary text-sm font-semibold tracking-widest uppercase mb-4 block">
               About Us
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight mb-6">
-              A Tech-Driven
-              <br />
+              A Tech-Driven  
+              <br /> 
               <span className="text-gradient">Creative Agency</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">

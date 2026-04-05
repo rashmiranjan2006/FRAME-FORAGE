@@ -1,16 +1,47 @@
+
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Play } from "lucide-react";
+import advFlowersForever from "../assets/adv flowers forever.mp4";
+import aryaCosmatics from "../assets/arya cosmatics.mp4";
+import brandZone from "../assets/brand zone.mp4";
+import flowersForever from "../assets/flowers forever.mp4";
+import tajNursery from "../assets/taj nursery.mp4";
+import heroBg from "../assets/hero-bg.jpg";
 
 const categories = ["All", "Reels", "Brand Shoots", "Product Videos", "Ads"];
 
 const projects = [
-  { title: "Luxe Fashion Campaign", category: "Brand Shoots", description: "Complete visual identity and campaign shoot for premium fashion brand.", result: "2.5M impressions, 340% engagement boost" },
-  { title: "Tech Startup Launch Reel", category: "Reels", description: "Series of viral launch reels for SaaS product debut.", result: "500K views in 48 hours" },
-  { title: "Artisan Coffee Product Film", category: "Product Videos", description: "Cinematic product film showcasing craft brewing process.", result: "180% increase in online orders" },
-  { title: "Fitness Brand Ad Suite", category: "Ads", description: "High-converting ad creatives for multi-platform campaign.", result: "4.2x ROAS across platforms" },
-  { title: "Restaurant Grand Opening", category: "Reels", description: "Viral reel series for luxury restaurant launch event.", result: "1M+ organic reach" },
-  { title: "Skincare Product Showcase", category: "Product Videos", description: "Premium product cinematography with macro detail shots.", result: "220% increase in product page conversions" },
+  {
+    title: "Adv Flowers Forever",
+    category: "Brand Shoots",
+    description: "A vibrant shoot for Adv Flowers Forever.",
+    video: advFlowersForever,
+  },
+  {
+    title: "Arya Cosmatics",
+    category: "Product Videos",
+    description: "Product showcase for Arya Cosmatics.",
+    video: aryaCosmatics,
+  },
+  {
+    title: "Brand Zone",
+    category: "Ads",
+    description: "Ad campaign for Brand Zone.",
+    video: brandZone,
+  },
+  {
+    title: "Flowers Forever",
+    category: "Reels",
+    description: "Social media reel for Flowers Forever.",
+    video: flowersForever,
+  },
+  {
+    title: "Taj Nursery",
+    category: "Brand Shoots",
+    description: "Brand shoot for Taj Nursery.",
+    video: tajNursery,
+  },
 ];
 
 const PortfolioSection = () => {
@@ -72,8 +103,13 @@ const PortfolioSection = () => {
               className="glass-card overflow-hidden group cursor-pointer hover:border-primary/20 transition-all duration-500"
             >
               <div className="relative aspect-video bg-surface flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10" />
-                <Play className="text-foreground/30 group-hover:text-primary group-hover:scale-110 transition-all duration-300" size={40} />
+                <video
+                  src={project.video}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10 pointer-events-none" />
               </div>
               <div className="p-6">
                 <span className="text-xs text-primary font-medium uppercase tracking-wider">{project.category}</span>

@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+npm i
+npm run dev
 
-## Project info
+# FRAME FORZE
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Overview
 
-## How can I edit this code?
+FRAME FORZE is a modern, fully custom React project designed for creative agencies, portfolios, and businesses seeking a visually striking and performant web presence. This project is not based on any template or code generator—every aspect has been hand-optimized and refactored for clarity, maintainability, and real-world use.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- ⚡ **Vite-powered**: Ultra-fast development and build tooling.
+- 🎨 **Tailwind CSS**: Utility-first styling for rapid UI development.
+- 🧩 **shadcn/ui**: Beautiful, accessible UI components.
+- ⚛️ **React (JavaScript)**: Clean, type-free codebase for maximum flexibility.
+- 🧑‍💻 **Custom Hooks & Animations**: Includes custom hooks and Framer Motion for smooth, interactive experiences.
+- 🗂️ **Modular Structure**: Organized by feature for easy scaling and collaboration.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository:**
+	```sh
+	git clone <YOUR_GIT_URL>
+	cd FRAME FORZE
+	```
+2. **Install dependencies:**
+	```sh
+	npm install
+	```
+3. **Start the development server:**
+	```sh
+	npm run dev
+	```
+4. **Build for production:**
+	```sh
+	npm run build
+	```
 
-**Use your preferred IDE**
+## Folder Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- `src/` — Main source code
+  - `components/` — All UI and page section components
+  - `hooks/` — Custom React hooks
+  - `lib/` — Utility functions
+  - `pages/` — Page-level components
+  - `assets/` — Static assets (images, etc.)
+  - `test/` — Test setup and examples
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technologies Used
 
-Follow these steps:
+- React (JavaScript)
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- ESLint
+
+## Deployment
+
+You can deploy FRAME FORZE to any static hosting provider (Vercel, Netlify, GitHub Pages, etc.) after building:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm run build
+# Deploy the contents of the dist/ folder
 ```
 
-**Edit a file directly in GitHub**
+## About
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+FRAME FORZE is a personal, hand-crafted project. All code is original and maintained for real-world use—no code generators, no Lovable, and no external project links. For questions, improvements, or collaboration, please open an issue or pull request.
