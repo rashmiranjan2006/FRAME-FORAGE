@@ -30,8 +30,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container-tight flex items-center justify-between h-20 px-4 md:px-8">
-        <a href="#" className="font-display text-xl md:text-2xl font-bold tracking-tight">
-          FRAME FORZE<span className="text-primary">.</span>
+        <a href="#" className="flex items-center h-12">
+          <img src="/rectangle logo.png" alt="Frame Forze Logo" className="h-full w-auto object-contain" />
         </a>
 
         {/* Desktop */}
